@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 
 import useAuth from "../../../hooks/useAuth";
 import avatarImg from "../../../assets/images/placeholder.jpg";
-import logo from "../../../assets/images/logo-flat.png";
+
 import { ThemeContext } from "../../../providers/ThemeProvider";
 import { BsMoon, BsSun } from "react-icons/bs";
 import { Link } from "react-router";
@@ -14,7 +14,7 @@ const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log(theme);
+  //console.log(theme);
 
   return (
     // ✨ CHANGE 1: Added dark:bg-gray-900 and default/dark text colors
